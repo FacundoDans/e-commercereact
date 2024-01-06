@@ -1,7 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from '../CartWidget/CartWidget';
 
-function Navbar() {
+
+function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="/">Hollow-Store</a>
@@ -23,15 +25,10 @@ function Navbar() {
             <a className="nav-link" href="/">Zapatos</a>
           </li>
         </ul>
-        <div className="navbar-nav">
-          <a className="nav-item nav-link" href="/">
-            <i className="fas fa-shopping-cart"></i> 
-          </a>
-          <button className="btn btn-outline-primary ml-2">Ingresar</button>
-        </div>
       </div>
+      <CartWidget />
     </nav>
   );
 }
 
-export default Navbar;
+export default NavBar;
